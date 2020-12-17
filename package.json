@@ -1,5 +1,5 @@
 {
-  "name": "nsogroup_widgets_task",
+  "name": "widgets_app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
