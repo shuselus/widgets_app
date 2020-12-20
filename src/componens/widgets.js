@@ -76,7 +76,11 @@ export const Widgets = (props => {
   }; 
   
   const getNewWidget = (data) => {
-    data.id = widgetsListArr[widgetsListArr.length -1].id + 1;
+   if(widgetsListArr.length > 0){
+      data.id = widgetsListArr[widgetsListArr.length -1].id + 1;
+   }else{
+      data.id = 1;
+   }
     setWidgetsListArr(widgetsListArr => [...widgetsListArr, data]);
   };
   
